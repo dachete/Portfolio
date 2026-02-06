@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>EcoConciencia | Contaminación</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* ================== ESTILOS GENERALES ================== */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    opacity: 0; /* para la transición */
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* ================== MENÚ PRINCIPAL ================== */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #616161, #9e9e9e);
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    z-index: 1000;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #424242;
+    border-radius: 5px;
+}
+
+/* ================== SECCIÓN ================== */
+section {
+    max-width: 1000px;
+    margin: 100px auto 40px auto; /* margen superior para que no tape el menú */
+    padding: 20px;
+}
+
+.grid-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.grid-info img {
+    max-width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* ================== ARTÍCULOS ================== */
+article {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+article h2, article h3 {
+    color: #616161;
+}
+
+/* ================== FOOTER ================== */
+footer {
+    background-color: #424242;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 600px) {
+    .grid-info {
+        flex-direction: column;
+    }
+}
+
+</style>
+</head>
+
+<body onload="document.body.style.opacity='1'">
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="CONTAMINACIÓN.html">Contaminación</a>
+    <a href="RECICLAJE.html">Reciclaje</a>
+    <a href="IA.html">Portal IA</a>
+</nav>
+
+<section>
+    <div class="grid-info">
+        <div>
+            <h2>La Crisis Ambiental</h2>
+            <p>La contaminación afecta aire, agua y suelo, alterando el equilibrio natural. Las emisiones industriales, los plásticos, la contaminación de vehículos y la deforestación son algunas de las causas principales que ponen en riesgo la salud de los ecosistemas y de los seres humanos.</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?auto=format&fit=crop&w=900&q=80" alt="Contaminación ambiental">
+    </div>
+
+    <article>
+        <h3>Tipos de Contaminación</h3>
+        <ul>
+            <li><b>Contaminación del aire:</b> Emisión de gases tóxicos y partículas que afectan la respiración.</li>
+            <li><b>Contaminación del agua:</b> Vertidos de químicos y plásticos que dañan ríos y océanos.</li>
+            <li><b>Contaminación del suelo:</b> Residuos y pesticidas que degradan la tierra y los cultivos.</li>
+        </ul>
+    </article>
+
+    <article>
+        <h3>Consecuencias</h3>
+        <p>La contaminación provoca enfermedades respiratorias, pérdida de biodiversidad, cambio climático y deterioro de los recursos naturales esenciales para la vida.</p>
+    </article>
+
+    <article>
+        <h3>Qué podemos hacer</h3>
+        <ul>
+            <li>Reducir el uso de plásticos y reciclar correctamente.</li>
+            <li>Utilizar transporte sostenible, como bicicletas o transporte público.</li>
+            <li>Ahorrar energía y promover energías renovables.</li>
+            <li>Participar en campañas de limpieza y concienciación ambiental.</li>
+        </ul>
+    </article>
+
+</section>
+
+<footer>
+    <p>EcoConciencia © 2025</p>
+    <p>Separar residuos y reducir contaminación ayuda al planeta</p>
+</footer>
+
+</body>
+</html>
