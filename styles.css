@@ -1,0 +1,195 @@
+/* VARIABLES DE COLOR (Identidad Corporativa) */
+:root {
+    --primary-color: #c19a62; /* Morado InmoSorolla */
+    --primary-hover: #cdae81;
+    --text-color: #333;
+    --bg-color: #ffffff;
+    --bg-light: #f4f4f4;
+    --card-bg: #ffffff;
+    --white: #ffffff;
+}
+
+/* MODO OSCURO (Sobrescribe variables) */
+.dark-mode {
+    --text-color: #f4f4f4;
+    --bg-color: #1a1a1a;
+    --bg-light: #2c2c2c;
+    --card-bg: #333333;
+}
+
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para modo oscuro */
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-padding {
+    padding: 60px 0;
+}
+
+/* HEADER */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #d1b3ff; /* Un tono más claro para destacar */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#theme-toggle {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* HERO SECTION */
+.hero {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1500&q=80');
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 { font-size: 3rem; margin-bottom: 10px; }
+.hero p { font-size: 1.2rem; margin-bottom: 20px; }
+
+/* BOTONES */
+.btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn:hover { background-color: var(--primary-hover); }
+.btn-full { width: 100%; margin-top: 10px; }
+
+/* INMUEBLES (GRID) */
+.properties-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body { padding: 20px; }
+.card h3 { color: var(--primary-color); margin-bottom: 10px; }
+.price { font-weight: bold; font-size: 1.2rem; margin-bottom: 10px; }
+
+/* CALCULADORA */
+.bg-light { background-color: var(--bg-light); }
+.calc-box {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.calc-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.result {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.hidden { display: none; }
+
+/* FORMULARIO */
+.form-group { margin-bottom: 15px; }
+.form-group label { display: block; margin-bottom: 5px; }
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: var(--bg-color); /* Para modo oscuro */
+    color: var(--text-color);
+}
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-content a { color: #ccc; text-decoration: none; margin: 0 5px; }
+.footer-content a:hover { color: white; }
